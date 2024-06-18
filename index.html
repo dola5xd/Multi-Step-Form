@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <main class="relative h-[100vh] lg:flex lg:w-full lg:p-[50px] xl:p-[100px] lg:bg-Magnolia lg:flex-col lg:gap-5 lg:items-center">
+        <section class="h-[90vh] relative bg-Magnolia bg-mobile_bannar bg-contain bg-no-repeat lg:bg-none lg:p-[10px] lg:flex lg:bg-white lg:h-[588px] lg:w-[924px] lg:rounded-[7px]">
+            <div id="steps" class="flex items-center justify-center py-[50px] gap-[30px] lg:items-start lg:justify-normal lg:px-[50px] lg:gap-[25px] lg:bg-desktop_bannar lg:bg-no-repeat lg:rounded-[7px] lg:flex lg:flex-col lg:min-w-[274px] lg:min-h-[578px]">
+                <span class="relative active">
+            1
+            <div
+              class="hidden lg:block absolute left-[150%] text-bold text-Cool_gray text-[14px] uppercase"
+            >
+              Step1
+              <h1 class="text-white text-nowrap">YOUR INFO</h1>
+            </div>
+          </span>
+                <span class="relative">
+            2
+            <div
+              class="hidden lg:block absolute left-[150%] text-bold text-Cool_gray text-[14px] uppercase"
+            >
+              Step2
+              <h1 class="text-white text-nowrap">select Plan</h1>
+            </div>
+          </span>
+                <span class="relative">
+            3
+            <div
+              class="hidden lg:block absolute left-[150%] text-bold text-Cool_gray text-[14px] uppercase"
+            >
+              Step3
+              <h1 class="text-white text-nowrap">Add-ons</h1>
+            </div>
+          </span>
+                <span class="relative">
+            4
+            <div
+              class="hidden lg:block absolute left-[150%] text-bold text-Cool_gray text-[14px] uppercase"
+            >
+              Step4
+              <h1 class="text-white text-nowrap">Summary</h1>
+            </div>
+          </span>
+            </div>
+            <div id="stepInfo" class="step-info lg:static lg:w-full lg:rounded-l-[0px] lg:flex lg:py-[50px] lg:px-[100px]">
+                <h1 class="text-marine_Blue font-bold text-[1.5em] md:text-[1.7em] tracking-tight duration-500">
+                    Personal info
+                </h1>
+                <p class="text-Cool_gray font-light text-[15px] tracking-tight leading-tight my-[5px] md:my-[10px] md:pr-[50px] duration-500 lg:p-0 lg:text-[1em]">
+                    Please provide your name, email address, and phone number.
+                </p>
+                <form action="post" class="flex flex-col my-[10px] duration-500">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="e.g. Stephen King" class="capitalize" />
+                    <label for="email">E-mail Address</label>
+                    <input type="email" id="email" placeholder="e.g. stephenking@lorem.com" />
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" maxlength="12" placeholder="e.g. +1 234 567 890" />
+                </form>
+            </div>
+        </section>
+        <section class="w-full bg-Alabaster flex justify-between items-center text-[10px] md:text-base px-[20px] flex-row-reverse h-[10vh] absolute bottom-0 lg:relative lg:-top-[110px] lg:bg-transparent lg:p-0 xl:right-[-10%] xl:w-[45%] movements">
+            <button id="next" class="bg-marine_Blue py-[10px] px-[20px] text-Magnolia rounded duration-500 hover:opacity-75 font-bold">
+          Next Step
+        </button>
+            <button id="back" class="hidden py-[10px] px-[20px] text-Cool_gray rounded duration-500 hover:opacity-75 font-bold">
+          Go Back
+        </button>
+        </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
