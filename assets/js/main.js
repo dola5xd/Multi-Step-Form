@@ -75,9 +75,9 @@ const CheckForm = function() {
         //   Make Changes!
 
         if (
-            nameValue == undefined &&
-            emailValue == undefined &&
-            phoneValue == undefined
+            nameValue != undefined &&
+            emailValue != undefined &&
+            phoneValue != undefined
         ) {
             //Show BackBtn
             backBtn.classList.remove("hidden");
